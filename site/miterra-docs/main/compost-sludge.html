@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>8. Compost &amp; Sludge | The Miterra Model Documenation</title>
+    <link rel="stylesheet" href="../../ui/css/site.css">
+
+
+    <link rel="stylesheet" href="../../ui/css/vendor/tabs.css">
+
+    <link rel="stylesheet" href="../../ui/css/shiki.css">
+    <meta name="generator" content="Antora 3.1.10">
+    <meta property="og:description" content="A documentation page for Miterra Documentation.">
+    <meta property="og:site_name" content="Asciidoctor Docs">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Miterra Documentation - 8. Compost &amp; Sludge">
+    <meta property="og:image" content="../../_/img/asciidoctor-og.png">
+    <meta name="twitter:site" content="@asciidoctor">
+    <link rel="prev" href="fertilization.html">
+    <link rel="next" href="soil-input-output.html">
+    <meta name="page-spec" content="miterra-docs::main/compost-sludge.adoc">
+    <link rel="icon" href="../../ui/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" title="Miterra" href="#"><img src="../../ui/img/logo.svg" alt="Miterra" width="48"></a>
+            <a class="navbar-item title" href="../..">The Miterra Model Documenation</a>
+            <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="topbar-nav" class="navbar-menu">
+            <div class="navbar-end">
+                    <div class="navbar-item search hide-for-print">
+                        <form>
+                            <div id="search-field" class="has-filter">
+                                <input id="search-input" class="inputbox" type="text" placeholder="Search the docs">
+<!--                                <a href="#" class="clear-button">cancel</a>-->
+                                <span class="clear-button"></span>
+                                <label class="filter checkbox">
+                                    <input type="checkbox" data-facet-filter="component:miterra-docs"> In this project
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">Tooling</div>
+                    <div class="navbar-dropdown is-right">
+                        <div class="navbar-item">Related Models</div>
+                        <a class="navbar-item" href="https://www.rothamsted.ac.uk/rothamsted-carbon-model-rothc" target="_blank" rel="noopener">RothC<small>Rothamsted Research, UK</small></a>
+                        <a class="navbar-item" href="https://projects.au.dk/alfam" target="_blank" rel="noopener">ALFAM2<small>Aarhus University, DK</small></a>
+                        <hr class="navbar-divider">
+                        <div class="navbar-item">Documentation Tools</div>
+                        <a class="navbar-item" href="https://asciidoc.org/" target="_blank" rel="noopener">AsciiDoc<small>Authoring</small></a>
+                        <a class="navbar-item" href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor<small>Text Processing</small></a>
+                        <a class="navbar-item" href="https://docs.asciidoctor.org/browser-extension/" target="_blank" rel="noopener">Asciidoctor<br>Browser Extension<small>Page Preview</small></a>
+                        <a class="navbar-item" href="https://antora.org/" target="_blank" rel="noopener">Antora<small>Site Building</small></a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">Links</div>
+                    <div class="navbar-dropdown is-right">
+                        <div class="navbar-item">Who We Are</div>
+                        <a class="navbar-item" href="https://www.wur.nl/en/research-results/research-institutes/environmental-research/meet-our-teams/sustainable-soil-management.htm" target="_blank" rel="noopener">
+                            The Sustainable Soil Management Team</a>
+                        <a class="navbar-item" href="https://www.wur.nl/en/research-results/research-institutes/environmental-research.htm" target="_blank" rel="noopener">
+                            Wageningen Environmental Research</a>
+                        <a class="navbar-item" href="https://www.wur.nl/en.htm" target="_blank" rel="noopener">Wageningen University &amp; Research</a>
+                        <hr class="navbar-divider">
+                        <div class="navbar-item">Follow Us on Social Media</div>
+                        <a class="navbar-item" href="javascript:void(0);" target="_blank" rel="noopener external">LinkedIn</a>
+                        <a class="navbar-item" href="javascript:void(0);" target="_blank" rel="noopener external">YouTube</a>
+                        <a class="navbar-item" href="javascript:void(0);" target="_blank" rel="noopener external">X</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="miterra-docs" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active is-loading" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Miterra Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item " data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item " data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Part I: Introduction</span>
+<ul class="nav-list">
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="general.html">1. General Description</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="specs.html">2. Specifications</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Part II: The Livestock Sector</span>
+<ul class="nav-list">
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="manure.html">3. Livestock &amp; Manure Management</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="manure-emissions.html">4. N Emissions from Manure Management</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Part III: Soil &amp; the Cropping Sector</span>
+<ul class="nav-list">
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="water.html">5. Water Fluxes</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="crop.html">6. Crop Production</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="fertilization.html">7. Fertilization</a>
+  </li>
+  <li class="nav-item  is-current-url" data-depth="2">
+    <a class="nav-link" href="compost-sludge.html">8. Compost &amp; Sludge</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="soil-input-output.html">9. Input To &amp; Output From Soil</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="nitrogen.html">10. N Losses from Soil</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="phosphorus.html">11. Soil P Dynamics</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="sulphur.html">12. Soil S Dynamics</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="metals.html">13. Heavy Metal (Cd, Cu &amp; Zn) Dynamics</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="base-cations.html">14. Base Cation Dynamics</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Part IV: Submodels</span>
+<ul class="nav-list">
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="roth-cn.html">15.A. The RothCN Model</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="roth-cn-miterra.html">15.B. Integration of RothCN in Miterra</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="alfam2.html">16. The ALFAM2 Model</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="utilities.html">17. Utility Functions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Appendix</span>
+<ul class="nav-list">
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../appendix/glossary.html">Glossary</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../appendix/references.html">References</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Supplemental Information</span>
+<ul class="nav-list">
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../suppl/manuscripts.html">Manuscripts</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../suppl/projects.html">Projects</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../suppl/authors.html">Developers &amp; Authors</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../suppl/acknowledge.html">Acknowledgements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../about/about.html">About</a>
+<ul class="nav-list">
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../about/license.html">License</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../about/attribution.html">Attribution</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <a class="nav-link" href="../print.html"><span class="icon auto"><i class="fa fa-print"></i></span> Print-Friendly Version</a>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <a class="nav-link" href="../download.html#download_local"><span class="icon auto"><i class="fa fa-download"></i></span> Download Local Copy</a>
+  </li>
+  <li class="nav-item " data-depth="1">
+    <a class="nav-link" href="../download.html#download_pdf"><span class="icon auto"><i class="fa fa-file-pdf-o"></i></span> Download PDF</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+  <script>
+;(function () {
+  var panel = document.querySelector('.nav-panel-menu')
+  var page
+  var hash = window.location.hash
+  if (hash) {
+    if (~hash.indexOf('%')) hash = decodeURIComponent(hash)
+    if (~hash.indexOf('"')) hash = hash.replace(/(?=")/g, '\\')
+    var link = panel.querySelector('.nav-link[href="' + hash + '"]')
+    if (link) page = link.parentNode
+    else if ((page = panel.querySelector('.is-current-url'))) page.classList.add('is-provisional')
+  } else {
+    page = panel.querySelector('.is-current-url')
+  }
+  if (page) {
+    var ancestor = page
+    while ((ancestor = ancestor.parentNode) && ancestor !== panel) {
+      if (ancestor.className === 'nav-item') ancestor.classList.add('is-current-path', 'is-active')
+    }
+    page.classList.add('is-current-page', 'is-active')
+    if (panel.scrollHeight > panel.clientHeight) {
+      var panelRect = panel.getBoundingClientRect()
+      var linkRect = page.querySelector('.nav-link').getBoundingClientRect()
+      panel.scrollTop += Math.round(linkRect.top - panelRect.top - (panelRect.height - linkRect.height) * 0.5)
+    }
+  } else {
+    panel.scrollTop = 0
+  }
+  panel.classList.remove('is-loading')
+})()
+  </script>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Miterra Documentation</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Miterra Documentation</a>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link" title="Home"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Miterra Documentation</a></li>
+    <li>Part III: Soil &amp; the Cropping Sector</li>
+    <li><a href="compost-sludge.html">8. Compost &amp; Sludge</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///C:/LocalStore/Miterra-Site-Local/miterra-docs/modules/ROOT/pages/main/compost-sludge.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="3">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc miterra-docs">
+<h1 class="page">8. Compost &amp; Sludge</h1>
+<div class="sect1">
+<h2 id="_estimation_of_compost_and_sludge_application"><a class="anchor" href="#_estimation_of_compost_and_sludge_application"></a>Estimation of compost and sludge application</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Based on <span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC87124" target="_blank" rel="noopener">Saveyn &amp; Eder (2013)</a>, it is assumed that on average 51% of the compost produced is used in agriculture, and the rest is used in public green, gardening, and horticulture. Compost is assumed to be distributed evenly to all crops except grassland.</p>
+</div>
+<div class="paragraph">
+<p>For sludge, the amount used for agriculture in each EU member state is provided as input (data source: Eurostat, 2020). Sludge is distributed evenly to all crops except grassland.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec_compost"><a class="anchor" href="#sec_compost"></a>Nutrient content in compost</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Nutrient content in compost is calculated based on the composition of the compost product (<span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://edepot.wur.nl/558037">Regelink <em>et al</em>., 2021</a>). All values are given in g kg<sup>–1</sup>.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 60%;">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Compost Type</th>
+<th class="tableblock halign-left valign-top">DM</th>
+<th class="tableblock halign-left valign-top">C</th>
+<th class="tableblock halign-left valign-top">N</th>
+<th class="tableblock halign-left valign-top">P</th>
+<th class="tableblock halign-left valign-top">K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Biowaste</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">620</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">114.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.66</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.9</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Greenwaste</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">649</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">145.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.96</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.6</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>According to <span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://doi.org/10.1002/jeq2.20295">Geisseler <em>et al</em>. (2021)</a>, on average 16-17% of total N was present as mineral N in various organic fertilizers and composts. It is therefore assumed that 16% of the total N in compost is in inorganic form, and the rest is organic.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec_sludge"><a class="anchor" href="#sec_sludge"></a>Nutrient content in sludge</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Based on <span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://edepot.wur.nl/259392">Driessen &amp; Roos (1996)</a>, the following assumptions are made on the composition of sludge:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The average and median organic matter content is ca. 50%.</p>
+</li>
+<li>
+<p>C content is assumed to be 50% of organic matter.</p>
+</li>
+<li>
+<p>For N, the average and median N content is ca. 44 g kg<sup>–1</sup> .</p>
+</li>
+<li>
+<p>For P, the content is country-specific, ranging from 0.9% to 6.7%, with an average of 3.3%.</p>
+</li>
+<li>
+<p>For K, the average and median K content is ca. 8 g kg<sup>–1</sup> DM.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Similar to compost, it is assumed that 16% of the sludge N is inorganic, and the rest is organic.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="fertilization.html">7. Fertilization</a></span>
+  <span class="next"><a href="soil-input-output.html">9. Input To &amp; Output From Soil</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+    <div class="footer-main">
+        <figure class="footer-brand">
+            <a href="#" target="_blank" rel="noopener"><img class="logo" src="../../ui/img/logo.svg" alt="Miterra"></a>
+            <figcaption class="footer-brand-name"><a href="#" target="_blank" rel="noopener">Miterra</a></figcaption>
+        </figure>
+        <p></p>
+    </div>
+    <div class="footer-legal">
+        <p>Copyright © 2025 Wageningen Environmental Research and individual contributors.<br>
+            Except where otherwise noted, Wageningen Environmental Research retains the rights to the content presented herein,<br>
+            including, but not limited to, texts, graphic materials, mathematical equations, and codes.</p>
+        <p>This model documentation is provided for reference only. Content is subject to change without notice.</p>
+        <p class="small hide-for-print">The UI for this site is derived from the
+            <a href="https://gitlab.com/antora/antora-ui-default" target="_blank" rel="noopener">Antora Default UI</a>,
+            <a href="https://github.com/asciidoctor/asciidoctor-docs-ui" target="_blank" rel="noopener">Asciidoctor Docs UI</a>, and
+            <a href="https://github.com/Normation/rudder-doc" target="_blank" rel="noopener">Rudder Documentation</a>, and is licensed under the MPL-2.0 or CC BY-SA 2.0 license.<br>
+            Several icons are imported from <a href="https://primer.style/octicons/" target="_blank" rel="noopener">Octicons</a> and are licensed under the MIT license.</p>
+    </div>
+    <div class="footer-thanks">
+        <a href="https://www.wur.nl/en" target="_blank" rel="noopener"><img class="logo" src="../../ui/img/wur-logo.svg" alt="Wageningen University & Research"></a>
+    </div>
+</footer>
+<!--<script id="site-script" src="../../ui/js/site.js" data-ui-root-path="../../ui"></script>-->
+<script id="site-script" src="../../ui/js/01-nav.js" data-ui-root-path="../../ui"></script>
+<script id="site-script-02" src="../../ui/js/02-on-this-page.js" data-ui-root-path="../../ui"></script>
+<script id="site-script-03" src="../../ui/js/03-fragment-jumper.js" data-ui-root-path="../../ui"></script>
+<script id="site-script-04" src="../../ui/js/04-page-versions.js" data-ui-root-path="../../ui"></script>
+<script id="site-script-05" src="../../ui/js/05-mobile-navbar.js" data-ui-root-path="../../ui"></script>
+<script id="site-script-06" src="../../ui/js/06-copy-to-clipboard.js" data-ui-root-path="../../ui"></script>
+<script id="site-script-07" src="../../ui/js/07-copy-page-spec.js" data-ui-root-path="../../ui"></script>
+
+
+<script async src="../../ui/js/vendor/tabs.js"></script>
+<script async src="../../ui/js/vendor/highlight.js"></script>
+
+<!-- Load MathJax, although it's not being used currently. -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<!--<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>-->
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="../../ui/js/jquery-3.7.1.slim.min.js"></script>
+<script id="rendered-js">
+    /* clear text */
+    $('form').on('click', '.inputbox + .clear-button', function (e) {
+        e.preventDefault();
+        $(this).prev('input').val('');
+        $('.search-result-dropdown-menu').html('');
+        $(this).prev('input').focus();
+        return false;
+    });
+
+    /* input without required attribute */
+    $('form').on('focus blur keyup', '.inputbox:not([required])', function (e) {
+        e.preventDefault();
+        if ($(this).val().length) {
+            $(this).addClass('valid-text');
+        } else {
+            $(this).removeClass('valid-text');
+        }
+    });
+    $('form').on('click', '.inputbox:not([required]) + .clear-button', function (e) {
+        e.preventDefault();
+        $(this).prev('input').removeClass('valid-text');
+        return false;
+    });
+</script>
+
+    <script src="../../ui/js/vendor/lunr.js"></script>
+<script src="../../ui/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../ui/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+
+  </body>
+</html>

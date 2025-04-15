@@ -1,0 +1,56 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");*/
+/*@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");*/
+@import "font-awesome.css";
+
+/* Noto Sans */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(../font/noto-sans-variable.ttf) format('truetype-variations');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(../font/noto-sans-italic-variable.ttf) format('truetype-variations');
+}
+
+
+/* Noto Serif */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(../font/noto-serif-variable.ttf) format('truetype-variations');
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(../font/noto-serif-italic-variable.ttf) format('truetype-variations');
+}
+
+
+/* Cascadia Code */
+@font-face {
+  font-family: 'Cascadia Code';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(../font/cascadia_code.woff2) format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(../font/cascadia_code_italic.woff2) format('woff2-variations');
+}
