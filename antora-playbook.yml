@@ -1,0 +1,70 @@
+site:
+  title: The Miterra Model Documenation
+  start_page: miterra-docs::index.adoc
+  url: https://wenr-db.github.io/miterra-site/
+  robots: allow
+
+content:
+  sources:
+  - url: ./miterra-docs
+    branches: HEAD
+
+output:
+  destinations:
+    - provider: fs
+      path: ./site
+      clean: true
+    - provider: archive
+      path: ./miterra-site.zip
+
+antora:
+  extensions:
+    - require: '@springio/antora-xref-extension'
+      log-unnecessary-link-text-warnings: true
+    - require: '@antora/lunr-extension'
+    - require: 'antora-shiki-extension'
+      theme: 'min-light'                # catppuccin-latte
+      languages: [asciidoc, shell, bash, console, python]
+      use_line_numbers: true
+      conums_override: true             # Enable custom styling
+      conums_bg_color: '#424242'        # Dark slate background
+      conums_fg_color: '#ffffff'        # White text
+      conums_show_border: false         # Show borders
+
+asciidoc:
+  extensions:
+  - '@asciidoctor/tabs'
+  - '@djencks/asciidoctor-mathjax'
+  attributes:
+    page-pagination: '@'  # To unset pagination on a single page, set `:page-pagination!:` for the page.
+    experimental: true
+    icons: font
+    page-toclevels: 3@
+    stem: latexmath
+    eqnums: none
+    source-highlighter: shiki
+    # highlightjs-theme: intellij-light
+    mathjax-tex-packages: ams mathtools colorv2
+    # Set the tex packages to load, e.g. ':mathjax-tex-packages: ams physics'. This must be set in the playbook or as a doc attribute.
+    mathjax-tex-tags: none 
+    # Set the tex 'tags' attribute.
+    # Allowed values are 'none' (default), 'ams' (requires the ams package), and 'all'.
+    # This controls equation numbering.In Antora, equations are numbered per-page.
+    # example-caption: false
+    # listing-caption: false
+
+ui:
+  bundle:
+    # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    # url: https://github.com/asciidoctor/docs.asciidoctor.org-ui/releases/download/prod-latest/ui-bundle.zip
+    url: ./miterra-ui
+    snapshot: true
+  supplemental_files:
+    - path: ui.yml
+      contents: |
+        static_files:
+        - .nojekyll
+    - path: .nojekyll
+  output_dir: ui
+
+  
