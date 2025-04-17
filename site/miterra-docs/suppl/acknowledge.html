@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Acknowledgements | The Miterra Model Documenation</title>
+    <title>Acknowledgements | Miterra Model Documenation</title>
     <link rel="stylesheet" href="../../ui/css/site.css">
 
 
-    <link rel="stylesheet" href="../../ui/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../ui/css/search.css">
+    <link rel="stylesheet" href="../../ui/css/tabs.css">
 
+    <link rel="stylesheet" href="../../ui/css/treeview.css">
     <link rel="stylesheet" href="../../ui/css/shiki.css">
     <meta name="generator" content="Antora 3.1.10">
-    <link rel="canonical" href="https://wenr-db.github.io/miterra-site/miterra-docs/suppl/acknowledge.html">
-    <meta property="og:url" content="https://wenr-db.github.io/miterra-site/miterra-docs/suppl/acknowledge.html">
-    <meta property="og:description" content="A documentation page for Miterra Documentation.">
-    <meta property="og:site_name" content="Asciidoctor Docs">
+    <link rel="canonical" href="https://ssm-wenr.github.io/miterra-site/miterra-docs/suppl/acknowledge.html">
+    <meta property="og:url" content="https://ssm-wenr.github.io/miterra-site/miterra-docs/suppl/acknowledge.html">
+    <meta property="og:description" content="A page for Miterra Documentation.">
+    <meta property="og:site_name" content="Miterra Docs">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:title" content="Miterra Documentation - Acknowledgements">
-    <meta property="og:image" content="https://wenr-db.github.io/miterra-site/_/img/asciidoctor-og.png">
-    <meta name="twitter:site" content="@asciidoctor">
+    <meta property="og:image" content="https://ssm-wenr.github.io/miterra-site/_/img/miterra-og.png">
+    <meta name="twitter:site" content="@miterra">
     <link rel="prev" href="authors.html">
     <link rel="next" href="../about/about.html">
     <meta name="page-spec" content="miterra-docs::suppl/acknowledge.adoc">
@@ -29,7 +31,7 @@
     <nav class="navbar">
         <div class="navbar-brand">
             <a class="navbar-item logo" title="Miterra" href="#"><img src="../../ui/img/logo.svg" alt="Miterra" width="48"></a>
-            <a class="navbar-item title" href="https://wenr-db.github.io/miterra-site/miterra-docs/index.html">The Miterra Model Documenation</a>
+            <a class="navbar-item title" href="https://ssm-wenr.github.io/miterra-site/miterra-docs/index.html">Miterra Model Documenation</a>
             <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
                 <span></span>
                 <span></span>
@@ -42,7 +44,6 @@
                         <form>
                             <div id="search-field" class="has-filter">
                                 <input id="search-input" class="inputbox" type="text" placeholder="Search the docs">
-<!--                                <a href="#" class="clear-button">cancel</a>-->
                                 <span class="clear-button"></span>
                                 <label class="filter checkbox">
                                     <input type="checkbox" data-facet-filter="component:miterra-docs"> In this project
@@ -53,15 +54,12 @@
                 <div class="navbar-item has-dropdown is-hoverable">
                     <div class="navbar-link">Tooling</div>
                     <div class="navbar-dropdown is-right">
-                        <div class="navbar-item">Related Models</div>
-                        <a class="navbar-item" href="https://www.rothamsted.ac.uk/rothamsted-carbon-model-rothc" target="_blank" rel="noopener">RothC<small>Rothamsted Research, UK</small></a>
-                        <a class="navbar-item" href="https://projects.au.dk/alfam" target="_blank" rel="noopener">ALFAM2<small>Aarhus University, DK</small></a>
-                        <hr class="navbar-divider">
-                        <div class="navbar-item">Documentation Tools</div>
-                        <a class="navbar-item" href="https://asciidoc.org/" target="_blank" rel="noopener">AsciiDoc<small>Authoring</small></a>
-                        <a class="navbar-item" href="https://asciidoctor.org/" target="_blank" rel="noopener">Asciidoctor<small>Text Processing</small></a>
-                        <a class="navbar-item" href="https://docs.asciidoctor.org/browser-extension/" target="_blank" rel="noopener">Asciidoctor<br>Browser Extension<small>Page Preview</small></a>
-                        <a class="navbar-item" href="https://antora.org/" target="_blank" rel="noopener">Antora<small>Site Building</small></a>
+                        <div class="navbar-item">Authoring Tools</div>
+                        <a class="navbar-item" target="_blank" rel="noopener external" href="https://code.visualstudio.com/">Visual Studio Code<small>Code Editor</small></a>
+                        <a class="navbar-item" target="_blank" rel="noopener external" href="https://asciidoc.org/">AsciiDoc<small>Language</small></a>
+                        <a class="navbar-item" target="_blank" rel="noopener external" href="https://asciidoctor.org/">Asciidoctor<small>Text Processor</small></a>
+                        <a class="navbar-item" target="_blank" rel="noopener external" href="https://docs.asciidoctor.org/browser-extension/">Asciidoctor<br>Browser Extension<small>Page Preview</small></a>
+                        <a class="navbar-item" target="_blank" rel="noopener external" href="https://antora.org/">Antora<small>Site Building</small></a>
                     </div>
                 </div>
 
@@ -69,16 +67,13 @@
                     <div class="navbar-link">Links</div>
                     <div class="navbar-dropdown is-right">
                         <div class="navbar-item">Who We Are</div>
-                        <a class="navbar-item" href="https://www.wur.nl/en/research-results/research-institutes/environmental-research/meet-our-teams/sustainable-soil-management.htm" target="_blank" rel="noopener">
-                            The Sustainable Soil Management Team</a>
-                        <a class="navbar-item" href="https://www.wur.nl/en/research-results/research-institutes/environmental-research.htm" target="_blank" rel="noopener">
-                            Wageningen Environmental Research</a>
-                        <a class="navbar-item" href="https://www.wur.nl/en.htm" target="_blank" rel="noopener">Wageningen University &amp; Research</a>
+                        <a class="navbar-item" target="_blank" rel="noopener" href="https://www.wur.nl/en/research-results/research-institutes/environmental-research/meet-our-teams/sustainable-soil-management.htm">Team Sustainable Soil Management</a>
+                        <a class="navbar-item" target="_blank" rel="noopener" href="https://www.wur.nl/en/research-results/research-institutes/environmental-research.htm">Wageningen Environmental Research</a>
+                        <a class="navbar-item" target="_blank" rel="noopener" href="https://www.wur.nl/en.htm">Wageningen University &amp; Research</a>
                         <hr class="navbar-divider">
                         <div class="navbar-item">Follow Us on Social Media</div>
-                        <a class="navbar-item" href="javascript:void(0);" target="_blank" rel="noopener external">LinkedIn</a>
-                        <a class="navbar-item" href="javascript:void(0);" target="_blank" rel="noopener external">YouTube</a>
-                        <a class="navbar-item" href="javascript:void(0);" target="_blank" rel="noopener external">X</a>
+                        <a class="navbar-item" target="_blank" rel="noopener external" href="https://www.linkedin.com/showcase/ssm-wenr/"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</span><small>@SSM-WEnR</small></a>
+                        <a class="navbar-item" target="_blank" rel="noopener external" href="https://ssm-wenr.github.io/"><span><i class="fa fa-github" aria-hidden="true"></i> Github</span><small>@SSM-WEnR</small></a>
                     </div>
                 </div>
             </div>
@@ -220,10 +215,10 @@
     <a class="nav-link" href="../print.html"><span class="icon auto"><i class="fa fa-print"></i></span> Print-Friendly Version</a>
   </li>
   <li class="nav-item " data-depth="1">
-    <a class="nav-link" href="../download.html#download_local"><span class="icon auto"><i class="fa fa-download"></i></span> Download Local Copy</a>
+    <a class="nav-link" href="../download.html"><span class="icon auto"><i class="fa fa-download"></i></span> Download Local Copy</a>
   </li>
   <li class="nav-item " data-depth="1">
-    <a class="nav-link" href="../download.html#download_pdf"><span class="icon auto"><i class="fa fa-file-pdf-o"></i></span> Download PDF</a>
+    <span class="nav-text"><a href="https://lunrjs.com/guides/searching.html" target="_blank" rel="noopener"><span class="icon auto"><i class="fa fa-search fa-flip-horizontal"></i></span> How to Use Search</a></span>
   </li>
 </ul>
   </li>
@@ -286,7 +281,7 @@
     <li><a href="acknowledge.html">Acknowledgements</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///C:/LocalStore/Miterra-Site-Local/miterra-docs/modules/ROOT/pages/suppl/acknowledge.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-site/miterra-docs/modules/ROOT/pages/suppl/acknowledge.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
 </div>
   <div class="content">
 <article class="doc miterra-docs">
@@ -325,42 +320,13 @@
         <a href="https://www.wur.nl/en" target="_blank" rel="noopener"><img class="logo" src="../../ui/img/wur-logo.svg" alt="Wageningen University & Research"></a>
     </div>
 </footer>
-<!--<script id="site-script" src="../../ui/js/site.js" data-ui-root-path="../../ui"></script>-->
-<script id="site-script" src="../../ui/js/01-nav.js" data-ui-root-path="../../ui"></script>
-<script id="site-script-02" src="../../ui/js/02-on-this-page.js" data-ui-root-path="../../ui"></script>
-<script id="site-script-03" src="../../ui/js/03-fragment-jumper.js" data-ui-root-path="../../ui"></script>
-<script id="site-script-04" src="../../ui/js/04-page-versions.js" data-ui-root-path="../../ui"></script>
-<script id="site-script-05" src="../../ui/js/05-mobile-navbar.js" data-ui-root-path="../../ui"></script>
-<script id="site-script-06" src="../../ui/js/06-copy-to-clipboard.js" data-ui-root-path="../../ui"></script>
-<script id="site-script-07" src="../../ui/js/07-copy-page-spec.js" data-ui-root-path="../../ui"></script>
+<script id="site-script" src="../../ui/js/site.js" data-ui-root-path="../../ui"></script>
 
+<script async src="../../ui/js/tabs.js"></script>
 
-<script async src="../../ui/js/vendor/tabs.js"></script>
-<script async src="../../ui/js/vendor/highlight.js"></script>
-
-<!-- Load MathJax, although it's not being used currently. -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  messageStyle: "none",
-  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
-  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
-  TeX: { equationNumbers: { autoNumber: "none" } }
-})
-MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
-  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
-    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
-      data.math.root.display = "block"
-    }
-    return data
-  })
-})
-</script>
-<!--<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>-->
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <script src="../../ui/js/jquery-3.7.1.slim.min.js"></script>
 <script id="rendered-js">
-    /* clear text */
     $('form').on('click', '.inputbox + .clear-button', function (e) {
         e.preventDefault();
         $(this).prev('input').val('');
@@ -368,8 +334,6 @@ MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
         $(this).prev('input').focus();
         return false;
     });
-
-    /* input without required attribute */
     $('form').on('focus blur keyup', '.inputbox:not([required])', function (e) {
         e.preventDefault();
         if ($(this).val().length) {
