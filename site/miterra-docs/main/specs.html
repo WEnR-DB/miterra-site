@@ -21,7 +21,7 @@
     <meta property="og:title" content="Miterra Documentation - 2. Specifications">
     <meta property="og:image" content="https://ssm-wenr.github.io/miterra-site/_/img/miterra-og.png">
     <meta name="twitter:site" content="@miterra">
-    <link rel="prev" href="general.html">
+    <link rel="prev" href="intro.html">
     <link rel="next" href="manure.html">
     <meta name="page-spec" content="miterra-docs::main/specs.adoc">
     <link rel="icon" href="../../ui/img/favicon.ico" type="image/x-icon">
@@ -93,10 +93,10 @@
 <ul class="nav-list">
   <li class="nav-item " data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Part I: Introduction</span>
+    <span class="nav-text">Part I: General Information</span>
 <ul class="nav-list">
   <li class="nav-item " data-depth="2">
-    <a class="nav-link" href="general.html">1. General Description</a>
+    <a class="nav-link" href="intro.html">1. Introduction</a>
   </li>
   <li class="nav-item  is-current-url" data-depth="2">
     <a class="nav-link" href="specs.html">2. Specifications</a>
@@ -177,6 +177,9 @@
     <a class="nav-link" href="../appendix/glossary.html">Glossary</a>
   </li>
   <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../appendix/abbrev.html">Abbreviations, Acronyms &amp; Symbols</a>
+  </li>
+  <li class="nav-item " data-depth="2">
     <a class="nav-link" href="../appendix/references.html">References</a>
   </li>
 </ul>
@@ -208,6 +211,9 @@
   </li>
   <li class="nav-item " data-depth="2">
     <a class="nav-link" href="../about/attribution.html">Attribution</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../about/ui.html">Test UI Element</a>
   </li>
 </ul>
   </li>
@@ -262,6 +268,9 @@
     <span class="version"></span>
   </div>
   <ul class="components">
+    <li class="component">
+      <a class="title" href="../../miterra-dev-docs/index.html">Miterra DevDocs</a>
+    </li>
     <li class="component is-current">
       <a class="title" href="../index.html">Miterra Documentation</a>
     </li>
@@ -277,11 +286,11 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Miterra Documentation</a></li>
-    <li>Part I: Introduction</li>
+    <li>Part I: General Information</li>
     <li><a href="specs.html">2. Specifications</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-site/miterra-docs/modules/ROOT/pages/main/specs.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-docs/modules/ROOT/pages/main/specs.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="3">
@@ -292,17 +301,268 @@
 <div class="sect1">
 <h2 id="_model_input"><a class="anchor" href="#_model_input"></a>Model input</h2>
 <div class="sectionbody">
-
+<table class="tableblock frame-all grid-all stripes-hover stretch">
+<colgroup>
+<col style="width: 27.2727%;">
+<col style="width: 18.1818%;">
+<col style="width: 54.5455%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Datasets</th>
+<th class="tableblock halign-left valign-top">Sources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Soil Properties</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soil pH, CEC, availability of CaCO<sub>3</sub>, NPK content</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soil Chemical properties at European scale based on LUCAS 2009/2012 topsoil data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ballabio, C., Lugato, E., Fernández-Ugalde, O., Orgiazzi, A., Jones, A., Borrelli, P., Montanarella, L. and Panagos, P., 2019. Mapping LUCAS topsoil chemical properties at European scale using Gaussian process regression. <em>Geoderma</em>, 355: 113912.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soil organic carbon (SOC) content</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LUCAS 2018 TOPSOIL data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fernandez-Ugalde, O; Scarpa, S; Orgiazzi, A.; Panagos, P.; Van Liedekerke, M; Marechal A. &amp; Jones, A. LUCAS 2018 Soil Module. Presentation of dataset and results, EUR 31144 EN, Publications Office of the European Union, Luxembourg. 2022, ISBN 978-92-76-54832-4, doi:10.2760/215013, JRC129926.</p>
+<p class="tableblock">Orgiazzi, A., Ballabio, C., Panagos, P., Jones, A., Fernández-Ugalde, O. 2018. LUCAS Soil, the largest expandable soil dataset for Europe: A review. European Journal of Soil Science, 69(1): 140–153. <a href="https://doi.org/10.1111/ejss.12499" class="bare">https://doi.org/10.1111/ejss.12499</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soil texture, coarse fractions, bulk density, rooting depth</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topsoil physical properties for Europe (based on LUCAS topsoil data)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ballabio C., Panagos P., Montanarella L. Mapping topsoil physical properties at European scale using the LUCAS database (2016) Geoderma, 261 , pp. 110-123.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soil type (WRB-LEV1), soil texture class (TEXT-SRF-DOM), soil depth to rock (DR), rooting depth (ROO), soil erosion, organic carbon class (OC_TOP), parent material (PAR-MAT-DOM).</p>
+<p class="tableblock">Base cation weathering</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ESDB v2.0 and soil erosion maps (JRC)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The European Soil Database distribution version 2.0, European Commission and the European Soil Bureau Network, CD-ROM, EUR 19945 EN, 2004.</p>
+<p class="tableblock">Panagos Panos. The European soil database (2006) GEO: connexion, 5(7), pp. 32–33.</p>
+<p class="tableblock">Reinds, G.J., Posch, M., &amp; de Vries, W. (2001). A semi-empirical dynamic soil acidification model for use in spatially explicit integrated assessment models for Europe. (Alterra-rapport; No. 84). Alterra. <a href="https://edepot.wur.nl/33685" class="bare">https://edepot.wur.nl/33685</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Slope</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EU-DEM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://ec.europa.eu/eurostat/web/gisco/geodata/digital-elevation-model/eu-dem#Slope">European Digital Elevation Model (EU-DEM)</a>, European Environmental Agency, 2024 (Accessed on 01-08-2024).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-factor, erosion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">USLE model</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Panagos, P., Borrelli, P., Meusburger, C., Alewell, C., Lugato, E., Montanarella, L., 2015. Estimating the soil erosion cover-management factor at European scale. <em>Land Use Policy Journal</em>. 48C, 38–50.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Livestock Data</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Livestock units, animal numbers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eurostat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://ec.europa.eu/eurostat/databrowser/view/agr_r_animal<em>custom_12229743/default/table?lang=en" target="_blank" rel="noopener">Animal populations by NUTS 2 region</a>.</p>
+<p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://ec.europa.eu/eurostat/databrowser/view/ef_lsk_poultry</em>custom_12234613/default/table?lang=en" target="_blank" rel="noopener">Poultry types by utilized agricultural area, size classes of livestock, and NUTS 2 region</a>.</p>
+<p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://ec.europa.eu/eurostat/databrowser/view/ef_lsk_main__custom_12234655/default/table?lang=en" target="_blank" rel="noopener">Main livestock indicators by NUTS 2 region</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Excretion rates</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Common Reporting Format of 2019 – 2021.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UNFCCC, 2025. Reporting requirements | UNFCCC</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Crop Data</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Percentage and area of natural grassland (not fertilized land) and rough grazing,  crop areas,</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eurostat</p>
+<p class="tableblock">Agrarstrukturerhebung (for Germany)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://ec.europa.eu/eurostat/databrowser/view/apro_cpshr/default/table?lang=en&amp;category=agr.apro.apro_crop.apro_cp.apro_cpsh" target="_blank" rel="noopener">Crop production in EU standard humidity by NUTS 2 region</a>.</p>
+<p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://www.regionalstatistik.de/genesis/online?language=de&amp;sequenz=statistikTabellen&amp;selectionname=41141#abreadcrumb" target="_blank" rel="noopener">Agrarstrukturerhebung 2020</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Crop yields</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eurostat</p>
+<p class="tableblock">Agrarstrukturerhebung (for Germany)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://ec.europa.eu/eurostat/databrowser/view/apro_cpshr/default/table?lang=en&amp;category=agr.apro.apro_crop.apro_cp.apro_cpsh" target="_blank" rel="noopener">Crop production in EU standard humidity by NUTS 2 region</a>.</p>
+<p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://www.regionalstatistik.de/genesis/online?language=de&amp;sequenz=statistikTabellen&amp;selectionname=41141#abreadcrumb" target="_blank" rel="noopener">Agrarstrukturerhebung 2020</a>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Fertilizer Data</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fertilizer use and type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FAOSTAT and IFASTAT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Food and Agriculture Organization of the United Nations, 1997. FAOSTAT statistical database. Rome: FAO.
+International Fertilizer Association, 2024, <a href="https://www.ifastat.org/" class="bare">https://www.ifastat.org/</a>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Farm Properties</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Arable farm size, farming system, crop rotation, areas with organic farming, irrigation, crop cover (arable land), perennial grass cover (used for C balance)</p>
+<p class="tableblock">Nitrogen Vulnerable Zones (NVZs)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EUROSTAT</p>
+<p class="tableblock">Agrarstrukturerhebung (2020; for Germany)</p>
+<p class="tableblock">Farm Structure Survey</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">European Commission, 2020. Eurostat statistical database. Brussels: European Commission.</p>
+<p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://www.regionalstatistik.de/genesis/online?operation=previous&amp;levelindex=0&amp;step=0&amp;titel=Statistik+%28Tabellen%29&amp;levelid=1727099952945&amp;acceptscookies=false" target="_blank" rel="noopener">Agrarstrukturerhebung, 2024</a>.</p>
+<p class="tableblock">European Environmental Agency, 2024. WISE WFD Protected Areas under the Water Framework Directive - PUBLIC VERSION - version 5.1, Jul. 2024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soil cover and Tillage practice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FSS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">European Commission, <span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://ec.europa.eu/eurostat/web/microdata/farm-structure-survey" target="_blank" rel="noopener">downloaded September 2009</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Areas under derogation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">European Commission, <span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://ec.europa.eu/environment/water/water-nitrates/index_en.html" target="_blank" rel="noopener">downloaded May 2019</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Crop residue removal index</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Smerald <em>et al</em>. (2023)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-external-link-square"></i></span> <a href="https://publikationen.bibliothek.kit.edu/1000162310" target="_blank" rel="noopener">Dataset: Global crop residue management dataset (1997–2021)</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Emission Factors</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N excretion of animals, CH4 emissions from manure management system and enteric fermentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">National GHG inventory submissions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">United Nations Framework Convention on Climate Change, 2020. National Inventory Submissions 2020. Bonn: United Nations Climate Change.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N2O, CO2 (peatland) emission factors, global warming potentials</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IPCC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IPCC, 2019. 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 4, Agriculture, Forestry, and Other Land Use. IPCC National Greenhouse Gas Inventories Programme. Institute for Global</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NH3 emission factors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EMEP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.eea.europa.eu/en/analysis/publications/emep-eea-guidebook-2023" class="bare">https://www.eea.europa.eu/en/analysis/publications/emep-eea-guidebook-2023</a>, Table 3-9, Chapter 3.B for manure; Table 3-2, Chapter 3.D for mineral fertilisers.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Climate Data</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Precipitation, evapotranspiration, temperature, wind speed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ERA5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hersbach, H., Bell, B., Berrisford, P., Biavati, G., Horányi, A., Muñoz Sabater, J., Nicolas, J., Peubey, C., Radu, R., Rozum, I., Schepers, D., Simmons, A., Soci, C., Dee, D., Thépaut, J-N. (2023): ERA5 hourly data on single levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS), DOI: 10.24381/cds.adbb2d47 (Accessed on 10-09-2024).</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Water Flux</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Precipitation surplus, surface runoff, and groundwater leaching fractions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keuskamp <em>et al</em>. (2012)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">J. A. Keuskamp, G. Van Drecht, A. F. Bouwman (2012). European-scale modelling of groundwater denitrification and associated N 2O production. Environmental Pollution, 165, pp. 67-76, doi: <a href="http://dx.doi.org/10.1016/j.envpol.2012.02.008" class="bare">http://dx.doi.org/10.1016/j.envpol.2012.02.008</a>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Nutrient Composition</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Composition of organic fertilizers</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple sources based on literature and database study</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Composition of crop (residues)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple sources based on literature and database study</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Composition of chemical fertilizers</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple sources based on literature and database study, including expert judgement of Römkens (2024)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ca, Cd, Cu, K, Mg, Na, NH3, NOx, SOx, Zn deposition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EMEP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Van Loon, M., Tarrasón, L., Posch, M., 2005. Modelling Base Cations in Europe. EMEP/MSC-W&amp;CCE Note2/2005. ISSN 0804-2446.
+EMEP MSC-W, <a href="https://emep.int/mscw/mscw_moddata.html" class="bare">https://emep.int/mscw/mscw_moddata.html</a>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Land Use</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Land use type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CORINE Land Cover (2018)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">European Union, Copernicus Land Monitoring Service 2021, European Environment Agency (EEA). Corine Land Cover. DOI: CORINE Land Cover 2018 (vector/raster 100 m), Europe, 6-yearly — Copernicus Land Monitoring Service (Accessed on 01-08-2024).</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_model_output"><a class="anchor" href="#_model_output"></a>Model output</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>Miterra generates output of the following categories:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Atmospheric emissions</p>
+<div class="ulist">
+<ul>
+<li>
+<p>NH<sub>3</sub> emissions from housing, farmyard, grazing excretions, storage of manure, and fertilization.</p>
+</li>
+<li>
+<p>N<sub>2</sub>O emissions from storage of manure, fertilization, and crop residues.</p>
+</li>
+<li>
+<p>NO<sub>x</sub> emissions from housing, grazing excretions, storage of manure, and fertilization.</p>
+</li>
+<li>
+<p>CH<sub>4</sub> emissions from housing (enteric fermentation) and storage of manure.</p>
+</li>
+<li>
+<p>CO<sub>2</sub> emissions from soil oganic matter decomposition.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Runoff and leaching</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Surface or subsurface runoff of N, P, K, S, Ca, Mg, Cd, Cu, and Zn to surface water.</p>
+</li>
+<li>
+<p>Leaching of N, P, K, S, Ca, Mg, Cd, Cu, and Zn to surface and groundwater.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Nutrient budgets and balances</p>
+<div class="ulist">
+<ul>
+<li>
+<p>N, P, K, S, Ca, Mg, Cd, Cu, and Zn input to, output from, and balances in the soil.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Soil organic matter</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Long-term SOC and SON turnover.</p>
+</li>
+<li>
+<p>Annual SOC and SON balances.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="general.html">1. General Description</a></span>
+  <span class="prev"><a href="intro.html">1. Introduction</a></span>
   <span class="next"><a href="manure.html">3. Livestock &amp; Manure Management</a></span>
 </nav>
 </article>
@@ -321,7 +581,7 @@
         <p>Copyright © 2025 Wageningen Environmental Research and individual contributors.<br>
             Except where otherwise noted, Wageningen Environmental Research retains the rights to the content presented herein,<br>
             including, but not limited to, texts, graphic materials, mathematical equations, and codes.</p>
-        <p>This model documentation is provided for reference only. Content is subject to change without notice.</p>
+        <p>This documentation is provided for reference only. Content is subject to change without notice.</p>
         <p class="small hide-for-print">The UI for this site is derived from the
             <a href="https://gitlab.com/antora/antora-ui-default" target="_blank" rel="noopener">Antora Default UI</a>,
             <a href="https://github.com/asciidoctor/asciidoctor-docs-ui" target="_blank" rel="noopener">Asciidoctor Docs UI</a>, and

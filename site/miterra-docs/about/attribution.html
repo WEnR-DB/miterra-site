@@ -22,7 +22,7 @@
     <meta property="og:image" content="https://ssm-wenr.github.io/miterra-site/_/img/miterra-og.png">
     <meta name="twitter:site" content="@miterra">
     <link rel="prev" href="license.html">
-    <link rel="next" href="../print.html">
+    <link rel="next" href="ui.html">
     <meta name="page-spec" content="miterra-docs::about/attribution.adoc">
     <link rel="icon" href="../../ui/img/favicon.ico" type="image/x-icon">
   </head>
@@ -93,10 +93,10 @@
 <ul class="nav-list">
   <li class="nav-item " data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Part I: Introduction</span>
+    <span class="nav-text">Part I: General Information</span>
 <ul class="nav-list">
   <li class="nav-item " data-depth="2">
-    <a class="nav-link" href="../main/general.html">1. General Description</a>
+    <a class="nav-link" href="../main/intro.html">1. Introduction</a>
   </li>
   <li class="nav-item " data-depth="2">
     <a class="nav-link" href="../main/specs.html">2. Specifications</a>
@@ -177,6 +177,9 @@
     <a class="nav-link" href="../appendix/glossary.html">Glossary</a>
   </li>
   <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../appendix/abbrev.html">Abbreviations, Acronyms &amp; Symbols</a>
+  </li>
+  <li class="nav-item " data-depth="2">
     <a class="nav-link" href="../appendix/references.html">References</a>
   </li>
 </ul>
@@ -208,6 +211,9 @@
   </li>
   <li class="nav-item  is-current-url" data-depth="2">
     <a class="nav-link" href="attribution.html">Attribution</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="ui.html">Test UI Element</a>
   </li>
 </ul>
   </li>
@@ -262,6 +268,9 @@
     <span class="version"></span>
   </div>
   <ul class="components">
+    <li class="component">
+      <a class="title" href="../../miterra-dev-docs/index.html">Miterra DevDocs</a>
+    </li>
     <li class="component is-current">
       <a class="title" href="../index.html">Miterra Documentation</a>
     </li>
@@ -281,7 +290,7 @@
     <li><a href="attribution.html">Attribution</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-site/miterra-docs/modules/ROOT/pages/about/attribution.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-docs/modules/ROOT/pages/about/attribution.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="3">
@@ -339,7 +348,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_special_thanks"><a class="anchor" href="#_special_thanks"></a>Special Thanks</h2>
+<h2 id="_special_thanks"><a class="anchor" href="#_special_thanks"></a><span class="icon auto"><i class="fa fa-thumbs-o-up"></i></span> Special Thanks</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>We thank the following open-source projects, whose work enabled some important features of this site:</p>
@@ -350,10 +359,10 @@
 <p>Mathemetical equations rendered by <span class="icon"><i class="fa fa-link fa-flip-horizontal"></i></span> <a href="https://gitlab.com/djencks/asciidoctor-mathjax.js" target="_blank" rel="noopener">Server side MathJax rendering for Asciidoctor.js/Antora</a>.</p>
 </li>
 <li>
-<p>Cross-reference text processed by <span class="icon"><i class="fa fa-link fa-flip-horizontal"></i></span> <a href="https://github.com/spring-io/antora-xref-extension" target="_blank" rel="noopener">Antora Xref Extension</a>.</p>
+<p>Cross-reference resolved by <span class="icon"><i class="fa fa-link fa-flip-horizontal"></i></span> <a href="https://github.com/spring-io/antora-xref-extension" target="_blank" rel="noopener">Antora Xref Extension</a>.</p>
 </li>
 <li>
-<p>Search functionality enabled by <span class="icon"><i class="fa fa-link fa-flip-horizontal"></i></span> <a href="https://gitlab.com/antora/antora-lunr-extension" target="_blank" rel="noopener">Antora Lunr Extension</a>.</p>
+<p>Full-text search enabled by <span class="icon"><i class="fa fa-link fa-flip-horizontal"></i></span> <a href="https://gitlab.com/antora/antora-lunr-extension" target="_blank" rel="noopener">Antora Lunr Extension</a>.</p>
 </li>
 <li>
 <p>Code highlighting rendered by <span class="icon"><i class="fa fa-link fa-flip-horizontal"></i></span> <a href="https://github.com/lask79/antora-shiki-extension" target="_blank" rel="noopener">Antora Shiki Extension</a>.</p>
@@ -361,13 +370,16 @@
 <li>
 <p>Tabbed panel interface enabled by <span class="icon"><i class="fa fa-link fa-flip-horizontal"></i></span> <a href="https://github.com/asciidoctor/asciidoctor-tabs" target="_blank" rel="noopener">Asciidoctor Tabs</a>.</p>
 </li>
+<li>
+<p>Treeview enabled by <span class="icon"><i class="fa fa-link fa-flip-horizontal"></i></span> <a href="https://github.com/lask79/asciidoctor-treeview" target="_blank" rel="noopener">Asciidoctor Treeview</a>.</p>
+</li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="license.html">License</a></span>
-  <span class="next"><a href="../print.html"><span class="icon auto"><i class="fa fa-print"></i></span> Print-Friendly Version</a></span>
+  <span class="next"><a href="ui.html">Test UI Element</a></span>
 </nav>
 </article>
   </div>
@@ -385,7 +397,7 @@
         <p>Copyright © 2025 Wageningen Environmental Research and individual contributors.<br>
             Except where otherwise noted, Wageningen Environmental Research retains the rights to the content presented herein,<br>
             including, but not limited to, texts, graphic materials, mathematical equations, and codes.</p>
-        <p>This model documentation is provided for reference only. Content is subject to change without notice.</p>
+        <p>This documentation is provided for reference only. Content is subject to change without notice.</p>
         <p class="small hide-for-print">The UI for this site is derived from the
             <a href="https://gitlab.com/antora/antora-ui-default" target="_blank" rel="noopener">Antora Default UI</a>,
             <a href="https://github.com/asciidoctor/asciidoctor-docs-ui" target="_blank" rel="noopener">Asciidoctor Docs UI</a>, and

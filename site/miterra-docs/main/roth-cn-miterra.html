@@ -93,10 +93,10 @@
 <ul class="nav-list">
   <li class="nav-item " data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Part I: Introduction</span>
+    <span class="nav-text">Part I: General Information</span>
 <ul class="nav-list">
   <li class="nav-item " data-depth="2">
-    <a class="nav-link" href="general.html">1. General Description</a>
+    <a class="nav-link" href="intro.html">1. Introduction</a>
   </li>
   <li class="nav-item " data-depth="2">
     <a class="nav-link" href="specs.html">2. Specifications</a>
@@ -177,6 +177,9 @@
     <a class="nav-link" href="../appendix/glossary.html">Glossary</a>
   </li>
   <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../appendix/abbrev.html">Abbreviations, Acronyms &amp; Symbols</a>
+  </li>
+  <li class="nav-item " data-depth="2">
     <a class="nav-link" href="../appendix/references.html">References</a>
   </li>
 </ul>
@@ -208,6 +211,9 @@
   </li>
   <li class="nav-item " data-depth="2">
     <a class="nav-link" href="../about/attribution.html">Attribution</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../about/ui.html">Test UI Element</a>
   </li>
 </ul>
   </li>
@@ -262,6 +268,9 @@
     <span class="version"></span>
   </div>
   <ul class="components">
+    <li class="component">
+      <a class="title" href="../../miterra-dev-docs/index.html">Miterra DevDocs</a>
+    </li>
     <li class="component is-current">
       <a class="title" href="../index.html">Miterra Documentation</a>
     </li>
@@ -281,7 +290,7 @@
     <li><a href="roth-cn-miterra.html">15.B. Integration of RothCN in Miterra</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-site/miterra-docs/modules/ROOT/pages/main/roth-cn-miterra.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-docs/modules/ROOT/pages/main/roth-cn-miterra.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="3">
@@ -708,7 +717,7 @@
 <html><head></head><body><pre class="shiki highlight min-light" style="--shiki-background-color: #ffffff; --shiki-conum-bg-color: #424242; --shiki-conum-fg-color: #ffffff;"><code data-lang="python" class="shiki has-line-numbers override-conums" style="--shiki-line-number-start: 1; --shiki-line-number-color: #000000;"><span class="line"><span style="color: #D32F2F">for</span><span style="color: #24292EFF"> month </span><span style="color: #D32F2F">in</span><span style="color: #24292EFF"> </span><span style="color: #6F42C1">range</span><span style="color: #212121">(</span><span style="color: #1976D2">12</span><span style="color: #212121">):</span></span>
 <span class="line"><span style="color: #24292EFF">    ModifyFactor</span><span style="color: #212121">[</span><span style="color: #24292EFF">month</span><span style="color: #212121">]</span><span style="color: #24292EFF"> </span><span style="color: #D32F2F">=</span><span style="color: #24292EFF"> ...  </span><i class="conum" data-value="1"></i><b>(1)</b></span>
 <span class="line"></span>
-<span class="line"><span style="color: #24292EFF">    </span><span style="color: #D32F2F">for</span><span style="color: #24292EFF"> compartment </span><span style="color: #D32F2F">in</span><span style="color: #24292EFF"> [</span><span style="color: #22863A">"DPM"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"RPM"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"DMA"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"RMA"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"HUM"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"BIO"</span><span style="color: #24292EFF">]</span></span>
+<span class="line"><span style="color: #24292EFF">    </span><span style="color: #D32F2F">for</span><span style="color: #24292EFF"> compartment </span><span style="color: #D32F2F">in</span><span style="color: #24292EFF"> [</span><span style="color: #22863A">"DPM"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"RPM"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"DMA"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"RMA"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"HUM"</span><span style="color: #212121">,</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"BIO"</span><span style="color: #24292EFF">]</span><span style="color: #212121">:</span></span>
 <span class="line"><span style="color: #24292EFF">        DecompFrac</span><span style="color: #212121">[</span><span style="color: #24292EFF">compartment</span><span style="color: #212121">]</span><span style="color: #24292EFF">[month] </span><span style="color: #D32F2F">=</span><span style="color: #24292EFF"> ...  </span><i class="conum" data-value="2"></i><b>(2)</b></span>
 <span class="line"></span></code></pre></body></html>
 </div>
@@ -1001,7 +1010,7 @@
         <p>Copyright © 2025 Wageningen Environmental Research and individual contributors.<br>
             Except where otherwise noted, Wageningen Environmental Research retains the rights to the content presented herein,<br>
             including, but not limited to, texts, graphic materials, mathematical equations, and codes.</p>
-        <p>This model documentation is provided for reference only. Content is subject to change without notice.</p>
+        <p>This documentation is provided for reference only. Content is subject to change without notice.</p>
         <p class="small hide-for-print">The UI for this site is derived from the
             <a href="https://gitlab.com/antora/antora-ui-default" target="_blank" rel="noopener">Antora Default UI</a>,
             <a href="https://github.com/asciidoctor/asciidoctor-docs-ui" target="_blank" rel="noopener">Asciidoctor Docs UI</a>, and

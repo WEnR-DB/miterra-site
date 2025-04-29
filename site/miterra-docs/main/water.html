@@ -93,10 +93,10 @@
 <ul class="nav-list">
   <li class="nav-item " data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Part I: Introduction</span>
+    <span class="nav-text">Part I: General Information</span>
 <ul class="nav-list">
   <li class="nav-item " data-depth="2">
-    <a class="nav-link" href="general.html">1. General Description</a>
+    <a class="nav-link" href="intro.html">1. Introduction</a>
   </li>
   <li class="nav-item " data-depth="2">
     <a class="nav-link" href="specs.html">2. Specifications</a>
@@ -177,6 +177,9 @@
     <a class="nav-link" href="../appendix/glossary.html">Glossary</a>
   </li>
   <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../appendix/abbrev.html">Abbreviations, Acronyms &amp; Symbols</a>
+  </li>
+  <li class="nav-item " data-depth="2">
     <a class="nav-link" href="../appendix/references.html">References</a>
   </li>
 </ul>
@@ -208,6 +211,9 @@
   </li>
   <li class="nav-item " data-depth="2">
     <a class="nav-link" href="../about/attribution.html">Attribution</a>
+  </li>
+  <li class="nav-item " data-depth="2">
+    <a class="nav-link" href="../about/ui.html">Test UI Element</a>
   </li>
 </ul>
   </li>
@@ -262,6 +268,9 @@
     <span class="version"></span>
   </div>
   <ul class="components">
+    <li class="component">
+      <a class="title" href="../../miterra-dev-docs/index.html">Miterra DevDocs</a>
+    </li>
     <li class="component is-current">
       <a class="title" href="../index.html">Miterra Documentation</a>
     </li>
@@ -281,7 +290,7 @@
     <li><a href="water.html">5. Water Fluxes</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-site/miterra-docs/modules/ROOT/pages/main/water.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///Volumes/Ocean/Miterra-Project/miterra-docs/modules/ROOT/pages/main/water.adoc" target="_blank" rel="noopener">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="3">
@@ -322,7 +331,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is the maximum runoff factor dependenent on slope.</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -365,7 +374,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is a reduction factor for land use or crop.</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -392,7 +401,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is a reduction factor for precipitation surplus.</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -425,7 +434,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is a reduction factor for soil type/texture, which is based on the clay content of the soil.</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -464,7 +473,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is a reduction factor for the depth to rock.</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -555,7 +564,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is the maximum leaching factor per soil texture type, which are based on ESDB &#8220;Dominant surface textural class&#8221; (database field <code>TEXT-SRF-DOM</code>).</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -617,7 +626,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is a reduction factor for precipitation surplus, which differs per soil texture class (see Miterra texture class above).</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -659,7 +668,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is a reduction factor for average annual temperature.</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -689,7 +698,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is a reduction factor for maximum rooting depth. Rooting depth data are based on ESDB &#8220;Depth class of an obstacle to roots&#8221; (database field <code>ROO</code>).</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -733,7 +742,7 @@ level of the soil. In the Miterra models, a maximum runoff factor is determined 
 </td>
 <td class="hdlist2">
 <p>is a reduction factor for soil organic carbon content. SOC data are based on ESDB &#8220;Topsoil organic carbon content&#8221; (database field <code>OC_TOP</code>).</p>
-<table class="tableblock frame-all grid-all fit-content">
+<table class="tableblock frame-all grid-all stripes-hover fit-content">
 <colgroup>
 <col>
 <col>
@@ -803,7 +812,7 @@ For a heterogeneous region, reduction factors are calculated as area-weighed ave
         <p>Copyright © 2025 Wageningen Environmental Research and individual contributors.<br>
             Except where otherwise noted, Wageningen Environmental Research retains the rights to the content presented herein,<br>
             including, but not limited to, texts, graphic materials, mathematical equations, and codes.</p>
-        <p>This model documentation is provided for reference only. Content is subject to change without notice.</p>
+        <p>This documentation is provided for reference only. Content is subject to change without notice.</p>
         <p class="small hide-for-print">The UI for this site is derived from the
             <a href="https://gitlab.com/antora/antora-ui-default" target="_blank" rel="noopener">Antora Default UI</a>,
             <a href="https://github.com/asciidoctor/asciidoctor-docs-ui" target="_blank" rel="noopener">Asciidoctor Docs UI</a>, and
